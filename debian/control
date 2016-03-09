@@ -1,0 +1,95 @@
+Source: asyn
+Section: libdevel
+Priority: extra
+Maintainer: Michael Davidsaver <mdavidsaver@gmail.com>
+Build-Depends: debhelper (>= 9), epics-debhelper (>= 8.12~),
+               epics-dev (>= 3.14.12),
+XS-Rtems-Build-Depends: rtems-epics
+Standards-Version: 3.9.6
+Homepage: http://www.aps.anl.gov/epics/modules/soft/asyn/
+Vcs-Git: https://github.com/epicsdeb/asyn.git
+Vcs-Browser: https://github.com/epicsdeb/asyn
+
+Package: epics-asyn-dev
+Architecture: any
+Depends: libasyn4.29 (= ${binary:Version}),
+         ${shlibs:Depends}, ${misc:Depends},
+         ${epics:Depends},
+Conflicts: epics-synapps,
+Description: Facility for interfacing to low level communication drivers
+ asynDriver is a general purpose facility for interfacing
+ device specific code to low level communication drivers.
+ A primary target for asynDriver is for EPICS IOC device support,
+ but other than using the EPICS build system and libCom library,
+ most of the code was designed so it can be used outside of an EPICS IOC.
+ .
+ This package contains headers and libraries needed at build time.
+
+Package: libasyn4.29
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+Conflicts: epics-synapps,
+Description: Facility for interfacing to low level communication drivers
+ asynDriver is a general purpose facility for interfacing
+ device specific code to low level communication drivers.
+ A primary target for asynDriver is for EPICS IOC device support,
+ but other than using the EPICS build system and libCom library,
+ most of the code was designed so it can be used outside of an EPICS IOC.
+ .
+ This package contains runtime libraries
+
+Package: rtems-asyn-mvme2100
+Architecture: all
+Depends: epics-asyn-dev (= ${binary:Version}),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: epics-synapps,
+Description: Facility for interfacing to low level communication drivers
+ asynDriver is a general purpose facility for interfacing
+ device specific code to low level communication drivers.
+ A primary target for asynDriver is for EPICS IOC device support,
+ but other than using the EPICS build system and libCom library,
+ most of the code was designed so it can be used outside of an EPICS IOC.
+ .
+ This package contains support for the MVME2100 VME SBC
+
+Package: rtems-asyn-mvme3100
+Architecture: all
+Depends: epics-asyn-dev (= ${binary:Version}),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: epics-synapps,
+Description: Facility for interfacing to low level communication drivers
+ asynDriver is a general purpose facility for interfacing
+ device specific code to low level communication drivers.
+ A primary target for asynDriver is for EPICS IOC device support,
+ but other than using the EPICS build system and libCom library,
+ most of the code was designed so it can be used outside of an EPICS IOC.
+ .
+ This package contains support for the MVME3100 VME SBC
+
+Package: rtems-asyn-mvme5500
+Architecture: all
+Depends: epics-asyn-dev (= ${binary:Version}),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: epics-synapps,
+Description: Facility for interfacing to low level communication drivers
+ asynDriver is a general purpose facility for interfacing
+ device specific code to low level communication drivers.
+ A primary target for asynDriver is for EPICS IOC device support,
+ but other than using the EPICS build system and libCom library,
+ most of the code was designed so it can be used outside of an EPICS IOC.
+ .
+ This package contains support for the MVME5500 VME SBC
+
+Package: rtems-asyn-pc386
+Architecture: all
+Depends: epics-asyn-dev (= ${binary:Version}),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: epics-synapps,
+Description: Facility for interfacing to low level communication drivers
+ asynDriver is a general purpose facility for interfacing
+ device specific code to low level communication drivers.
+ A primary target for asynDriver is for EPICS IOC device support,
+ but other than using the EPICS build system and libCom library,
+ most of the code was designed so it can be used outside of an EPICS IOC.
+ .
+ This package contains support for the pc386 BSP
