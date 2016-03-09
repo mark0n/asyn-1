@@ -1,0 +1,18 @@
+From: Michael Davidsaver <mdavidsaver@gmail.com>
+Date: Wed, 9 Mar 2016 16:03:56 -0500
+Subject: prevent generated docs from being cleaned
+
+---
+ Makefile | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/Makefile b/Makefile
+index 702890a..f3e1985 100644
+--- a/Makefile
++++ b/Makefile
+@@ -56,3 +56,5 @@ DIRS += testAsynPortClientApp
+ testAsynPortClientApp_DEPEND_DIRS = asyn
+ 
+ include $(TOP)/configure/RULES_TOP
++
++UNINSTALL_DIRS := $(filter-out $(INSTALL_HTML),$(UNINSTALL_DIRS))
