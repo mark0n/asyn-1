@@ -19,7 +19,7 @@ Architecture: any
 Depends: libasyn4.29 (= ${binary:Version}),
          ${shlibs:Depends}, ${misc:Depends},
          ${epics:Depends},
-Conflicts: epics-synapps,
+Conflicts: epics-synapps, epics-synapps-dev,
 Description: Facility for interfacing to low level communication drivers
  asynDriver is a general purpose facility for interfacing
  device specific code to low level communication drivers.
@@ -32,7 +32,6 @@ Description: Facility for interfacing to low level communication drivers
 Package: libasyn4.29
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
-Conflicts: epics-synapps,
 Description: Facility for interfacing to low level communication drivers
  asynDriver is a general purpose facility for interfacing
  device specific code to low level communication drivers.
@@ -47,7 +46,7 @@ Architecture: all
 Depends: epics-asyn-dev (>= ${source:Version}),
          epics-asyn-dev (<< ${source:Version}.1~),
          ${rtems:Depends}, ${misc:Depends},
-Conflicts: epics-synapps,
+Conflicts: rtems-synapps-mvme2100,
 Description: Facility for interfacing to low level communication drivers
  asynDriver is a general purpose facility for interfacing
  device specific code to low level communication drivers.
@@ -62,7 +61,7 @@ Architecture: all
 Depends: epics-asyn-dev (>= ${source:Version}),
          epics-asyn-dev (<< ${source:Version}.1~),
          ${rtems:Depends}, ${misc:Depends},
-Conflicts: epics-synapps,
+Conflicts: rtems-synapps-mvme3100,
 Description: Facility for interfacing to low level communication drivers
  asynDriver is a general purpose facility for interfacing
  device specific code to low level communication drivers.
@@ -77,7 +76,7 @@ Architecture: all
 Depends: epics-asyn-dev (>= ${source:Version}),
          epics-asyn-dev (<< ${source:Version}.1~),
          ${rtems:Depends}, ${misc:Depends},
-Conflicts: epics-synapps,
+Conflicts: rtems-synapps-mvme5500,
 Description: Facility for interfacing to low level communication drivers
  asynDriver is a general purpose facility for interfacing
  device specific code to low level communication drivers.
@@ -92,7 +91,7 @@ Architecture: all
 Depends: epics-asyn-dev (>= ${source:Version}),
          epics-asyn-dev (<< ${source:Version}.1~),
          ${rtems:Depends}, ${misc:Depends},
-Conflicts: epics-synapps,
+Conflicts: rtems-synapps-pc386,
 Description: Facility for interfacing to low level communication drivers
  asynDriver is a general purpose facility for interfacing
  device specific code to low level communication drivers.
