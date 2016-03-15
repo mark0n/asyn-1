@@ -1,3 +1,9 @@
+asyn (4.29-2) unstable; urgency=medium
+
+  * Fix Conflicts:
+
+ -- Michael Davidsaver <mdavidsaver@gmail.com>  Tue, 15 Mar 2016 13:38:41 -0400
+
 asyn (4.29-1) unstable; urgency=medium
 
   * Initial release.
