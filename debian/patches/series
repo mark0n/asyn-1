@@ -1,3 +1,4 @@
 0001-configure-RELEASE.patch
 0002-prevent-generated-docs-from-being-cleaned.patch
 0003-Don-t-build-test.patch
+0004-Enable-support-for-USB-test-and-measurement-TMC-devi.patch

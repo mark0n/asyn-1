@@ -1,0 +1,21 @@
+From: Martin Konrad <konrad@frib.msu.edu>
+Date: Wed, 25 Jan 2017 15:22:49 -0500
+Subject: Enable support for USB test and measurement (TMC) devices
+
+---
+ configure/CONFIG_SITE | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configure/CONFIG_SITE b/configure/CONFIG_SITE
+index d58f5c0..50469fd 100644
+--- a/configure/CONFIG_SITE
++++ b/configure/CONFIG_SITE
+@@ -37,7 +37,7 @@ CHECK_RELEASE = YES
+ LINUX_GPIB=NO
+ 
+ # If you have libusb-1.0 revision 16 or newer and want the USB TMC support set DRV_USBTMC=YES
+-#DRV_USBTMC=YES
++DRV_USBTMC=YES
+ 
+ # You can also define this on a per-architecture basis.  
+ # In this example DRV_USBTMC would be built only for linux-x86_64, and not for other architectures

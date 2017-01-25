@@ -8,6 +8,7 @@ Build-Depends: debhelper (>= 9), epics-debhelper (>= 8.12~),
                rtems-epics-mvme3100,
                rtems-epics-mvme5500,
                rtems-epics-pc386,
+               libusb-1.0-0-dev,
 XS-Rtems-Build-Depends: rtems-epics
 Standards-Version: 3.9.6
 Homepage: http://www.aps.anl.gov/epics/modules/soft/asyn/
