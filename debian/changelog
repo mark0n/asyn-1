@@ -1,3 +1,10 @@
+asyn (4.31-1) unstable; urgency=medium
+
+  * Imported Upstream version 4.31
+  * Bump up package version number
+
+ -- Martin Konrad <konrad@frib.msu.edu>  Thu, 23 Feb 2017 14:40:36 -0500
+
 asyn (4.30-1) unstable; urgency=medium
 
   [ Michael Davidsaver ]
