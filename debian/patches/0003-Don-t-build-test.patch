@@ -10,12 +10,12 @@ to build.
  1 file changed, 48 deletions(-)
 
 diff --git a/Makefile b/Makefile
-index f3e1985..d6bb00c 100644
+index 40b8b90..290eaab 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -7,54 +7,6 @@ DIRS += makeSupport
- DIRS += asyn
- asyn_DEPEND_DIRS = configure
+@@ -9,54 +9,6 @@ asyn_DEPEND_DIRS = configure
+ DIRS += asyn/asynPortDriver/unittest
+ asyn/asynPortDriver/unittest_DEPEND_DIRS = asyn
  
 -ifneq ($(EPICS_LIBCOM_ONLY),YES)
 -  DIRS += testApp
