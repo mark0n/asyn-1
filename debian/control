@@ -17,7 +17,7 @@ Vcs-Browser: https://github.com/epicsdeb/asyn
 
 Package: epics-asyn-dev
 Architecture: any
-Depends: libasyn4.31 (= ${binary:Version}),
+Depends: libasyn4.32 (= ${binary:Version}),
          ${shlibs:Depends}, ${misc:Depends},
          ${epics:Depends},
 Conflicts: epics-synapps, epics-synapps-dev,
@@ -30,7 +30,7 @@ Description: Facility for interfacing to low level communication drivers
  .
  This package contains headers and libraries needed at build time.
 
-Package: libasyn4.31
+Package: libasyn4.32
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
 Description: Facility for interfacing to low level communication drivers
