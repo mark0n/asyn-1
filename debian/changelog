@@ -1,3 +1,9 @@
+asyn (4.33-2) unstable; urgency=medium
+
+  * Add patch that fixes uninitialized variable
+
+ -- Martin Konrad <konrad@frib.msu.edu>  Wed, 07 Feb 2018 18:38:47 -0500
+
 asyn (4.33-1) unstable; urgency=medium
 
   * New upstream version 4.33
