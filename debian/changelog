@@ -1,3 +1,10 @@
+asyn (4.33-1) unstable; urgency=medium
+
+  * New upstream version 4.33
+  * Bump up library version to 4.33
+
+ -- Martin Konrad <konrad@frib.msu.edu>  Wed, 07 Feb 2018 16:53:58 -0500
+
 asyn (4.32-1) unstable; urgency=medium
 
   * New upstream version 4.32
