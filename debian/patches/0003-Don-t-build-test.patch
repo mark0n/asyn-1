@@ -10,10 +10,10 @@ to build.
  1 file changed, 48 deletions(-)
 
 diff --git a/Makefile b/Makefile
-index 40b8b90..290eaab 100644
+index f2bbc8c..f2dff97 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -9,54 +9,6 @@ asyn_DEPEND_DIRS = configure
+@@ -9,57 +9,9 @@ asyn_DEPEND_DIRS = configure
  DIRS += asyn/asynPortDriver/unittest
  asyn/asynPortDriver/unittest_DEPEND_DIRS = asyn
  
@@ -56,6 +56,9 @@ index 40b8b90..290eaab 100644
 -  DIRS += testOutputReadbackApp
 -  testOutputReadbackApp_DEPEND_DIRS = asyn
 -  iocBoot_DEPEND_DIRS += testOutputReadbackApp
+   DIRS += testOutputCallbackApp
+   testOutputCallbackApp_DEPEND_DIRS = asyn
+   iocBoot_DEPEND_DIRS += testOutputCallbackApp
 -  DIRS += testUsbtmcApp
 -  testUsbtmcApp_DEPEND_DIRS = asyn
 -  iocBoot_DEPEND_DIRS += testUsbtmcApp
