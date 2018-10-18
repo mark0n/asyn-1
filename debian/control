@@ -2,12 +2,12 @@ Source: asyn
 Section: libdevel
 Priority: extra
 Maintainer: Michael Davidsaver <mdavidsaver@gmail.com>
-Build-Depends: debhelper (>= 9), epics-debhelper (>= 8.12~),
-               epics-dev (>= 3.14.12),
-               rtems-epics-mvme2100,
-               rtems-epics-mvme3100,
-               rtems-epics-mvme5500,
-               rtems-epics-pc386,
+Build-Depends: debhelper (>= 9.20141010), dpkg-dev (>= 1.17.14),
+               epics-debhelper (>= 8.12~), epics-dev (>= 3.14.12),
+               rtems-epics-mvme2100 <pkg.epics-base.rtems>,
+               rtems-epics-mvme3100 <pkg.epics-base.rtems>,
+               rtems-epics-mvme5500 <pkg.epics-base.rtems>,
+               rtems-epics-pc386 <pkg.epics-base.rtems>,
                libusb-1.0-0-dev,
 XS-Rtems-Build-Depends: rtems-epics
 Standards-Version: 3.9.6
@@ -43,6 +43,7 @@ Description: Facility for interfacing to low level communication drivers
  This package contains runtime libraries
 
 Package: rtems-asyn-mvme2100
+Build-Profiles: <pkg.epics-base.rtems>
 Architecture: all
 Depends: epics-asyn-dev (>= ${source:Version}),
          epics-asyn-dev (<< ${source:Version}.1~),
@@ -58,6 +59,7 @@ Description: Facility for interfacing to low level communication drivers
  This package contains support for the MVME2100 VME SBC
 
 Package: rtems-asyn-mvme3100
+Build-Profiles: <pkg.epics-base.rtems>
 Architecture: all
 Depends: epics-asyn-dev (>= ${source:Version}),
          epics-asyn-dev (<< ${source:Version}.1~),
@@ -73,6 +75,7 @@ Description: Facility for interfacing to low level communication drivers
  This package contains support for the MVME3100 VME SBC
 
 Package: rtems-asyn-mvme5500
+Build-Profiles: <pkg.epics-base.rtems>
 Architecture: all
 Depends: epics-asyn-dev (>= ${source:Version}),
          epics-asyn-dev (<< ${source:Version}.1~),
@@ -88,6 +91,7 @@ Description: Facility for interfacing to low level communication drivers
  This package contains support for the MVME5500 VME SBC
 
 Package: rtems-asyn-pc386
+Build-Profiles: <pkg.epics-base.rtems>
 Architecture: all
 Depends: epics-asyn-dev (>= ${source:Version}),
          epics-asyn-dev (<< ${source:Version}.1~),
