@@ -1,3 +1,13 @@
+asyn (4.33-3) unstable; urgency=medium
+
+  [ Michael Davidsaver ]
+  * add missing jquery.js
+
+  [ Martin Konrad ]
+  * Use build profile to enable RTEMS cross build
+
+ -- Martin Konrad <konrad@frib.msu.edu>  Thu, 13 Sep 2018 13:11:46 -0400
+
 asyn (4.33-2) unstable; urgency=medium
 
   * Add patch that fixes uninitialized variable
