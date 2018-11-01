@@ -1,3 +1,11 @@
+asyn (4.34-1) unstable; urgency=medium
+
+  * New upstream version 4.34
+  * Bump up library version to 4.34
+  * Rebase patch queue
+
+ -- Martin Konrad <konrad@frib.msu.edu>  Tue, 30 Oct 2018 10:30:48 -0400
+
 asyn (4.33-3) unstable; urgency=medium
 
   [ Michael Davidsaver ]
