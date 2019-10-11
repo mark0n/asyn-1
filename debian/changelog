@@ -1,3 +1,12 @@
+asyn (4.35-1) unstable; urgency=medium
+
+  * New upstream version 4.35
+  * Bump up version of library packages
+  * Bump up standards version and compat level
+  * Rebase patch queue
+
+ -- Martin Konrad <konrad@frib.msu.edu>  Thu, 11 Jul 2019 17:10:33 -0400
+
 asyn (4.34-1) unstable; urgency=medium
 
   * New upstream version 4.34
