@@ -7,7 +7,7 @@ Subject: Enable support for USB test and measurement (TMC) devices
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/configure/CONFIG_SITE b/configure/CONFIG_SITE
-index ffa637e..ae52344 100644
+index d44a95b..2cdb69e 100644
 --- a/configure/CONFIG_SITE
 +++ b/configure/CONFIG_SITE
 @@ -37,7 +37,7 @@ CHECK_RELEASE = YES

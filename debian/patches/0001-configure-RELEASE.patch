@@ -3,18 +3,17 @@ Date: Wed, 9 Mar 2016 15:49:09 -0500
 Subject: configure/RELEASE
 
 ---
- configure/RELEASE | 10 ++++------
- 1 file changed, 4 insertions(+), 6 deletions(-)
+ configure/RELEASE | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
 
 diff --git a/configure/RELEASE b/configure/RELEASE
-index 66cf16d..c8858f8 100644
+index ae2d207..cb4f78d 100644
 --- a/configure/RELEASE
 +++ b/configure/RELEASE
-@@ -1,15 +1,13 @@
+@@ -1,17 +1,16 @@
  #RELEASE Location of external products
  
 -SUPPORT=/corvette/home/epics/devel
---include $(TOP)/../configure/SUPPORT.$(EPICS_HOST_ARCH)
 +SUPPORT=$(EPICS_BASE)
  
  #  IPAC is only necessary if support for Greensprings IP488 is required
@@ -28,5 +27,8 @@ index 66cf16d..c8858f8 100644
  
  #  EPICS_BASE 3.14.6 or later is required
 -EPICS_BASE=/corvette/usr/local/epics-devel/base-7.0.3
---include $(TOP)/../configure/EPICS_BASE.$(EPICS_HOST_ARCH)
+-
 +EPICS_BASE=/usr/lib/epics
+ -include $(TOP)/../RELEASE.local
+ -include $(TOP)/../RELEASE.$(EPICS_HOST_ARCH).local
+ -include $(TOP)/configure/RELEASE.local

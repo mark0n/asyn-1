@@ -10,10 +10,10 @@ to build.
  1 file changed, 48 deletions(-)
 
 diff --git a/Makefile b/Makefile
-index f2bbc8c..f2dff97 100644
+index ed5a62f..497a5b9 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -9,57 +9,9 @@ asyn_DEPEND_DIRS = configure
+@@ -9,61 +9,13 @@ asyn_DEPEND_DIRS = configure
  DIRS += asyn/asynPortDriver/unittest
  asyn/asynPortDriver/unittest_DEPEND_DIRS = asyn
  
@@ -63,6 +63,10 @@ index f2bbc8c..f2dff97 100644
 -  testUsbtmcApp_DEPEND_DIRS = asyn
 -  iocBoot_DEPEND_DIRS += testUsbtmcApp
 -  DIRS += iocBoot
+   ifeq ($(DRV_FTDI),YES)
+     DIRS += testFtdiApp
+     testFtdiApp_DEPEND_DIRS = asyn
+   endif
 -endif
 -
 -DIRS += testAsynPortClientApp
